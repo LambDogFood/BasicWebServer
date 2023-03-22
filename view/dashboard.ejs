@@ -2,49 +2,22 @@
 <html>
   <head>
     <title>Tile Dashboard</title>
+    <link rel="stylesheet" href="stylesheets/profile.css">
     <link rel="stylesheet" href="stylesheets/navbar.css">
-    <link rel="stylesheet" href="stylesheets/dashboard.css">
-    <link rel="stylesheet" href="stylesheets/tiles.css">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Reports</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
-      <div class="profile">
-        <div class="avatar">
-          <img src="https://via.placeholder.com/150">
-        </div>
-        <div class="profile-info">
-          <button>John Doe</button>
-          <ul class="dropdown">
-            <li><a href="#">Profile</a></li>
-            <li><a href = '#' id='logout-btn'>Log Out</a></li>
-          </ul>
-        </div>
+
+    <div class="menu">
+      <div class="title" onclick="f()">John Doe <span class="fa fa-bars"></span>
+        <div class="arrow"></div>
       </div>
-    </nav>
-   
-    <div class="container">
-      <div class="card">
-        <div class="header">
-          <h3>Menu IU <i class="fas fa-angle-down iconM"></i></h3>
-        </div>
-        <div class="body">
-          <ul>
-            <li><i class="fas fa-home icon"></i> Home</li>
-            <li><i class="fas fa-underline icon"></i> Mod logs</li>
-            <li><i class="fas fa-boxes icon"></i> Notices</li>
-            <li><i class="fas fa-table icon"></i> Statisitics</li>
-            <li><i class="fas fa-chart-pie icon"></i> Errors</li>
-          </ul>
-        </div>
+      <div class="dropdown">
+        <p>Inbox <span class="fa fa-inbox"></span></p>
+        <p>Settings <span class="fa fa-gear"></span></p>
+        <p id="logout-btn">Sign Out <span class="fa fa-sign-out"></span></p>
       </div>
     </div>
 
-    <script src="scripts/dashboard.js"></script>
+    <script src="scripts/profile.js"></script>
   </body>
 </html>
