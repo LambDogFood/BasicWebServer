@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tile Dashboard</title>
-    <link rel="stylesheet" href="stylesheets/profile.css">
+    <title>Dashboard</title>
     <link rel="stylesheet" href="stylesheets/navbar.css">
   </head>
+  
   <body>
-
-    <div class="menu">
-      <div class="title" onclick="f()">John Doe <span class="fa fa-bars"></span>
-        <div class="arrow"></div>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="logo.png" alt="Logo">
       </div>
-      <div class="dropdown">
-        <p>Inbox <span class="fa fa-inbox"></span></p>
-        <p>Settings <span class="fa fa-gear"></span></p>
-        <p id="logout-btn">Sign Out <span class="fa fa-sign-out"></span></p>
+      <div class="navbar-links">
+        <ul>
+          <li class="navbar-item">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#">About Us</a>
+          </li>
+        </ul>
       </div>
-    </div>
-
-    <script src="scripts/profile.js"></script>
+      <div class="navbar-account">
+        <div class="navbar-account-dropdown">
+          <button class="navbar-account-button">Account</button>
+          <ul class="navbar-account-dropdown-menu">
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">Preferences</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
