@@ -4,6 +4,7 @@
     <title>Tile Dashboard</title>
     <link rel="stylesheet" href="stylesheets/navbar.css">
     <link rel="stylesheet" href="stylesheets/dashboard.css">
+    <link rel="stylesheet" href="stylesheets/tiles.css">
   </head>
   <body>
     <nav>
@@ -21,39 +22,35 @@
           <button>John Doe</button>
           <ul class="dropdown">
             <li><a href="#">Profile</a></li>
-            <li><a id='logout-btn'>Log Out</a></li>
+            <li><a href = '#' id='logout-btn'>Log Out</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
-
+   
     <div class="container">
-      <div class="tile">
-        <h2>Tile 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="tile">
-        <h2>Tile 2</h2>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="tile">
-        <h2>Tile 3</h2>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-      <div class="tile">
-        <h2>Tile 4</h2>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-      <div class="tile">
-        <h2>Tile 5</h2>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="tile">
-        <h2>Tile 6</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="card">
+        <div class="header">
+          <h3>Menu IU <i class="fas fa-angle-down iconM"></i></h3>
+        </div>
+        <div class="body">
+          <ul>
+            <li><i class="fas fa-home icon"></i> Home</li>
+            <li><i class="fas fa-underline icon"></i> Tipography</li>
+            <li><i class="fas fa-boxes icon"></i> Widgets</li>
+            <li><i class="fas fa-table icon"></i> Tables</li>
+            <li><i class="fab fa-wpforms icon"></i> Forms
+              <ul>
+                <li><i class="fas fa-pencil-alt icon"></i> First form</li>
+                <li><i class="fas fa-paper-plane icon"></i> Second form</li>
+              </ul>
+            </li>
+            <li><i class="fas fa-chart-pie icon"></i> Charts</li>
+          </ul>
+        </div>
       </div>
     </div>
+
     <script src="scripts/dashboard.js"></script>
   </body>
 </html>
